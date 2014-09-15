@@ -1,0 +1,15 @@
+{
+  "name": "livestyle-server",
+  "version": "1.0.0",
+  "description": "Simple LiveStyle server, used for debugging and as a reference for other server implementations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergey Chikuyonok",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.9.0",
+    "ws": "^0.4.32"
+  }
+}
