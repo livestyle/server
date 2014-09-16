@@ -9,7 +9,13 @@
   "author": "Sergey Chikuyonok",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.9.0",
-    "ws": "^0.4.32"
+    "ws": "^0.4.32",
+    "finalhandler": "^0.2.0",
+    "serve-static": "^1.6.2",
+    "chalk": "^0.5.1"
+  },
+  "devDependencies": {
+    "livestyle-client": "git+https://github.com/livestyle/client.git",
+    "requirejs": "^2.1.15"
   }
 }

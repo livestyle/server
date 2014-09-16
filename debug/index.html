@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>LiveStyle socket debug</title>
+	<link rel="stylesheet" href="codemirror/codemirror.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>LiveStyle socket debug</h1>
+	<form>
+		<section class="samples-section">
+			<h2>Samples</h2>
+			<ul class="samples">
+				<li>diff</li>
+				<li>files</li>
+				<li>editor-connect</li>
+			</ul>
+		</section>
+		<fieldset>
+			<input type="text" name="message" placeholder="Message name" />
+			<textarea name="payload">{}</textarea>
+			<input type="submit" value="Send" />
+		</fieldset>
+	</form>
+	<script src="/requirejs/require.js" data-main="./app"></script>
+</body>
+</html>
