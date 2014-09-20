@@ -37,7 +37,7 @@ define(function(require) {
 		});
 	}
 
-	client.connect({port: 54001})
+	client.connect()
 		.on('connect', function() {
 			console.info('Socket connected');
 		})

@@ -117,10 +117,13 @@ wsServer.on('connection', function(ws) {
 	.on('close', function() {
 		console.log(chalk.red('Client disconnected'));
 		removeClient(ws);
+		sendMessage(clients, {name: 'client-disconnect'}, ws);
 	});
+
+	sendMessage(clients, {name: 'client-connect'}, ws);
 });
 
 // Listen
-server.listen(54001);
+server.listen(54000);
 var addr = server.address();
 console.log('Started LiveStyle server at http://' + addr.address + ':' + addr.port);
