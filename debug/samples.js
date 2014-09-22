@@ -9,7 +9,7 @@ define(function() {
 		'editor-disconnect': {
 			id: 'sample-editor'
 		},
-		'files': {
+		'editor-files': {
 			id: 'sample-editor',
 			files: ['/path/to/file1.css', '/path/to/file2.less', '/path/to/file3.scss']
 		},
@@ -17,13 +17,14 @@ define(function() {
 			uri: '/path/to/file1.css',
 			syntax: 'css',
 			hash: '12345',
-			content: 'div {color: red}'
+			content: 'div {background: yellow}'
 		},
 		'calculate-diff': {
 			uri: '/path/to/file1.css',
 			syntax: 'css',
 			hash: '12345-2',
-			content: 'div {color: blue}'
+			content: 'div {background: blue;color: white;}',
+			previous: 'div {background: yellow}'
 		},
 		'diff': {
 			uri: '/path/to/file1.css',
