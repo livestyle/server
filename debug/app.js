@@ -38,13 +38,13 @@ define(function(require) {
 	}
 
 	client.connect()
-		.on('connect', function() {
+		.on('open', function() {
 			console.info('Socket connected');
 		})
 		.on('message-receive', function(name, payload) {
 			console.log('Received message %c%s: %o', 'font-weight:bold;color:green', name, payload);
 		})
-		.on('disconnect', function() {
+		.on('close', function() {
 			console.warn('Socket disconnected');
 		});
 
