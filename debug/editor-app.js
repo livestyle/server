@@ -60,7 +60,7 @@ define(function(require) {
 	});
 
 	client.connect()
-	.on('open', function() {
+	.on('open client-connect', function() {
 		// tell all clients that editor is connected
 		console.log('Connected to server');
 		identify();
