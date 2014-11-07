@@ -3,6 +3,7 @@ define(function(require) {
 	var CodeMirror = require('./codemirror/codemirror');
 	var cssMode = require('./codemirror/css');
 	var crc32 = require('./crc32');
+	require('./codemirror/sublime');
 
 	var lockUpdates = false;
 	var editorId = 'demo';
@@ -49,7 +50,8 @@ define(function(require) {
 
 	var editor = CodeMirror.fromTextArea(document.querySelector('textarea'), {
 		mode: 'text/x-less',
-		indentWithTabs: true
+		indentWithTabs: true,
+		keyMap: 'sublime'
 	});
 	editor.on('change', function() {
 		if (lockUpdates) {
