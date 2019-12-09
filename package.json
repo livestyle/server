@@ -9,7 +9,7 @@
   "author": "Sergey Chikuyonok",
   "license": "MIT",
   "dependencies": {
-    "ws": "^0.4.32",
+    "ws": "^7.2.0",
     "finalhandler": "^0.2.0",
     "serve-static": "^1.6.2",
     "chalk": "^0.5.1"
